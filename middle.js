@@ -1,27 +1,6 @@
-const eqArrays=function(ar1,ar2) {
-    if(ar1.length!==ar2.length) {
-        return false;
-    }
-    for (let i=0;i<ar1.length;i++) {
+const eqArrays = require('./eqArrays');
 
-        if (ar1[i]!==ar2[i]) {
-
-            return false;
-        }
-    }
-    return true;
-
-}
-
-const assertArraysEqual = function(foo1,foo2) {
-
-    if (eqArrays(foo1,foo2)===false) {
-        return false;
-
-    }
-    return true;
-}
-
+const assertArraysEqual = require('./assertArraysEqual');
 
 const middle=function(array) {
     let result=[];
@@ -37,23 +16,11 @@ const middle=function(array) {
  
         return result;      
     }
-    else {
-             //console.log(array.length,"array.length");
-            // console.log(array.length/2,"array.length/2");
-            // console.log(array[i],"array[i]");
-            // console.log(Math.floor(array[i]),"Math.floor(array[i])");
-            
+    else {  
         result.push(array[Math.floor(i)]);
         return result;
     } 
     
 
 }
-
-//test cases
-//console.log(middle([1])) // => []
-//console.log(middle([1, 2])) // => []
-//console.log(middle([1, 2, 3])) // => [2]
-//console.log(middle([1, 2, 3, 4, 5])) // => [3]
-//console.log(middle([1, 2, 3, 4]))// => [2, 3]
-console.log(middle([1, 2, 3, 4, 5, 6])) // => [3, 4]
+module.exports = middle;
