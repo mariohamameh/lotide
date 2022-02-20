@@ -1,7 +1,7 @@
 {
-  "name": "package.json",
+  "name": "@mariohamameh/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "library of functionscd",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/mariohamameh/lotide.git"
   },
-  "author": "",
+  "author": "Mario Hamameh <mariohamameh97@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mariohamameh/lotide/issues"

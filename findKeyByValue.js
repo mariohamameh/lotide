@@ -3,17 +3,18 @@ const assertEqual = function(actual, expected) {
     if(actual===expected) {
         console.log(`assertion passed: ${actual} does equal ${expected}`);
     } else {
-        console.log(`assertion failed: ${actual} does not eqaul ${expected}`);
+        console.log(`assertion failed: ${actual} does not equal ${expected}`);
     }
 
 };
-const findKeyByValue = function(object, value) {
-    for (let key of object.length) {
-        if (key = value) {
-            return key;
-        }
+
+const findKeyByValue  = (obj,value) => {
+    for (const objKey in obj) {
+      if (obj[objKey] === value) {
+        return objKey;
+      }
     }
-}
+  };
 
 const bestTVShowsByGenre = { 
     sci_fi: "The Expanse",
