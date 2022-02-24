@@ -17,14 +17,7 @@ const eqObjects = function (object1, object2) {
     }
     return false;
 };
-/*
-if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
-                if (!eqArrays(object1[key], object2[key])) {
-                    return false;
-                }
-            }
 
-            */
 const assertObjectsEqual = function (actual, expected) {
     const inspect = require(`util`).inspect;
     if (actual !== expected) {
